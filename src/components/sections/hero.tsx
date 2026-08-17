@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative mx-auto flex min-h-[100svh] w-full max-w-7xl flex-col justify-center px-5 pt-32 pb-20 md:px-8"
+      className="relative mx-auto flex min-h-[100svh] w-full max-w-7xl flex-col justify-center overflow-hidden px-5 pt-32 pb-20 md:px-8"
     >
       <div className="liquid-bg animate-drift pointer-events-none absolute inset-x-0 top-1/4 -z-10 h-[38rem] opacity-70 blur-2xl" />
 
