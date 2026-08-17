@@ -82,7 +82,7 @@ export function Design() {
                   item.span === "tall" ? "aspect-[4/5]" : item.span === "wide" ? "aspect-[16/10]" : "aspect-square",
                 )}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[color-mix(in_oklab,var(--background)_92%,transparent)] via-transparent to-transparent opacity-80" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[color-mix(in_oklab,var(--background)_97%,transparent)] via-[color-mix(in_oklab,var(--background)_55%,transparent)] to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-5">
                 <div className="font-mono text-[10px] tracking-[0.22em] text-aqua uppercase">
                   {item.category}
