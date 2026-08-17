@@ -1,24 +1,55 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SiteBackground } from "@/components/site-background";
+import { SiteNav } from "@/components/site-nav";
+import { Hero } from "@/components/sections/hero";
+import { Journey } from "@/components/sections/journey";
+import { Projects } from "@/components/sections/projects";
+import { Design } from "@/components/sections/design";
+import { Figma } from "@/components/sections/figma";
+import { Clients } from "@/components/sections/clients";
+import { Certification } from "@/components/sections/certification";
+import { CvSection } from "@/components/sections/cv-section";
+import { Github } from "@/components/sections/github";
+import { About } from "@/components/sections/about";
+import { Contact, SiteFooter } from "@/components/sections/contact";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Julius Boamah — Developer, Designer & Digital Product Builder";
+const description =
+  "Portfolio of Julius Boamah, a Ghanaian software developer, UI/UX designer and AI enthusiast building websites, digital products and creative technology.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <SiteBackground />
+      <SiteNav />
+      <main>
+        <Hero />
+        <Journey />
+        <Projects />
+        <Design />
+        <Figma />
+        <Clients />
+        <Certification />
+        <CvSection />
+        <Github />
+        <About />
+        <Contact />
+      </main>
+      <SiteFooter />
+    </>
   );
 }
