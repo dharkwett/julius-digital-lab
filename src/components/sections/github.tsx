@@ -48,7 +48,8 @@ export function Github() {
             </div>
             <div
               aria-hidden
-              className="mt-5 grid grid-flow-col grid-rows-7 gap-1 overflow-hidden"
+              style={{ gridAutoColumns: "0.85rem" }}
+              className="mt-5 grid max-w-full grid-flow-col grid-rows-7 gap-1 overflow-hidden"
             >
               {cells.map((v, i) => (
                 <span
