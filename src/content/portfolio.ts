@@ -2,16 +2,23 @@
  * ALL SITE CONTENT LIVES HERE — edit these objects to update the site.
  * To swap an asset: upload it, then point the matching entry at the new import.
  */
-import cvAsset from "@/assets/Julius_Boamah_CV.pdf.asset.json";
-import alxAsset from "@/assets/alx.jpeg.asset.json";
-import celebrityAsset from "@/assets/celebrity2.png.asset.json";
-import bankAsset from "@/assets/bank.png.asset.json";
-import bank3Asset from "@/assets/bank3.png.asset.json";
-import foodAsset from "@/assets/food1.png.asset.json";
-import arikobAsset from "@/assets/d10.png.asset.json";
-import beautyAsset from "@/assets/d11.png.asset.json";
-import konama4Asset from "@/assets/konama4.png.asset.json";
-import konama7Asset from "@/assets/konama7.png.asset.json";
+import cvAsset from "@/assets/Julius_Boamah_CV.pdf";
+import alxAsset from "@/assets/alx.jpeg";
+import celebrityAsset from "@/assets/celebrity2.png";
+import bankAsset from "@/assets/bank.png";
+import bank3Asset from "@/assets/bank3.png";
+import foodAsset from "@/assets/food1.png";
+import arikobAsset from "@/assets/d10.png";
+import beautyAsset from "@/assets/d11.png";
+import konama4Asset from "@/assets/konama4.png";
+import konama7Asset from "@/assets/konama7.png";
+import heartsInkAsset from "@/assets/hearts&ink.png";
+import barteyDecorAsset from "@/assets/barteydecor.png";
+import theLocherAsset from "@/assets/the-locher.png";
+import shopallGhAsset from "@/assets/shopallgh.png";
+import ghanaDealsAsset from "@/assets/ghana deals.png";
+import abenaAsset from "@/assets/abena ai.png";
+import jumaPlaceholder from "@/assets/juma-placeholder.svg";
 
 export const profile = {
   name: "Julius Boamah",
@@ -28,10 +35,10 @@ export const profile = {
 };
 
 export const cv = {
-  url: cvAsset.url,
+  url: cvAsset,
   fileName: "Julius_Boamah_CV.pdf",
   fileType: "PDF",
-  fileSize: `${Math.round(cvAsset.size / 1024)} KB`,
+  fileSize: "—",
   description:
     "A full overview of my education, work experience, projects, skills and leadership roles.",
 };
@@ -42,7 +49,7 @@ export const certification = {
   title: "AI-Augmented Professional Development Skills in the Digital Age",
   date: "28th August 2024",
   focus: ["AI-augmented workflows", "Critical thinking", "Collaboration", "Problem solving"],
-  image: alxAsset.url,
+  image: alxAsset,
   verifyUrl: "https://intranet.alxswe.com/certificates/GNmxez9hXS",
   note: "8-week programme • Certificate of Achievement",
 };
@@ -61,31 +68,36 @@ export const projects: Project[] = [
     name: "Hearts Ink Bookshop",
     description: "An online bookshop experience built for browsing and discovering titles.",
     category: "E-commerce • Web",
-    url: "https://Hearts-ink-bookshop.vercel.app",
+      url: "https://Hearts-ink-bookshop.vercel.app",
+      image: heartsInkAsset,
   },
   {
     name: "BarteyDecor",
     description: "A decor brand website presenting products and services to customers online.",
     category: "Business Website",
-    url: "https://barteydecor.com",
+      url: "https://barteydecor.com",
+      image: barteyDecorAsset,
   },
   {
     name: "The Locher",
     description: "A digital product interface built as a focused, modern web experience.",
     category: "Web App",
-    url: "https://the-locher.vercel.app",
+      url: "https://the-locher.vercel.app",
+      image: theLocherAsset,
   },
   {
     name: "Shopall GH",
     description: "A Ghanaian online shopping platform connecting buyers with products.",
     category: "E-commerce",
-    url: "https://Shopallgh.com",
+      url: "https://Shopallgh.com",
+      image: shopallGhAsset,
   },
   {
     name: "Ghana Deal Find",
     description: "A deal discovery platform helping people find offers across Ghana.",
     category: "Product • Web",
-    url: "https://ghana-deal-find.lovable.app/",
+      url: "https://ghana-deal-find.lovable.app/",
+      image: ghanaDealsAsset,
   },
 ];
 
@@ -104,7 +116,7 @@ export const designs: DesignItem[] = [
     category: "Brand & Packaging",
     description: "Promotional artwork for Konama Drinks, built around bold type and product focus.",
     tools: "Photoshop, Canva",
-    image: konama7Asset.url,
+    image: konama7Asset,
     span: "tall",
   },
   {
@@ -113,7 +125,7 @@ export const designs: DesignItem[] = [
     description:
       "Interface concept for a multi-account banking app, focused on clarity and usability.",
     tools: "Figma",
-    image: bankAsset.url,
+    image: bankAsset,
     span: "wide",
   },
   {
@@ -121,7 +133,7 @@ export const designs: DesignItem[] = [
     category: "Social Media Design",
     description: "Product launch flyer for a farm-to-table poultry campaign.",
     tools: "Photoshop, Canva",
-    image: arikobAsset.url,
+    image: arikobAsset,
     span: "tall",
   },
   {
@@ -129,14 +141,14 @@ export const designs: DesignItem[] = [
     category: "Label Design",
     description: "Product label design with ingredient layout and brand marks.",
     tools: "Photoshop",
-    image: konama4Asset.url,
+    image: konama4Asset,
   },
   {
     title: "Banking App — Home Screen",
     category: "UI / UX Concept",
     description: "Dashboard screen exploring balance, services and transaction hierarchy.",
     tools: "Figma",
-    image: bank3Asset.url,
+    image: bank3Asset,
     span: "tall",
   },
   {
@@ -144,7 +156,7 @@ export const designs: DesignItem[] = [
     category: "Mobile App Design",
     description: "Food and grocery delivery app concept with auth, browse and category flows.",
     tools: "Figma",
-    image: foodAsset.url,
+    image: foodAsset,
     span: "wide",
   },
   {
@@ -152,7 +164,7 @@ export const designs: DesignItem[] = [
     category: "Creative Experiment",
     description: "Editorial poster experimenting with distortion and monochrome contrast.",
     tools: "Photoshop",
-    image: beautyAsset.url,
+    image: beautyAsset,
   },
 ];
 
@@ -180,7 +192,47 @@ export const figmaProjects: FigmaProject[] = [
       "A single-column card menu with photography-led items, a persistent cart indicator, and a high-contrast brand palette for clear calls to action.",
     prototypeUrl:
       "https://www.figma.com/proto/quXwzYqbKmkoyRQy1xxISx/celebrity-chief?node-id=29-57&t=BrAtYAm1ExCg4Azy-1&starting-point-node-id=4%3A2",
-    image: celebrityAsset.url,
+    image: celebrityAsset,
+  },
+  {
+    title: "Abena AI",
+    summary: "AI-driven assistant and interface explorations.",
+    role: "Design & Prototyping",
+    focus: "AI UX, interaction design",
+    challenge: "Designing clear AI interactions for everyday tasks.",
+    approach: "Progressive disclosure, clear feedback and microcopy.",
+    prototypeUrl: "https://www.figma.com/design/0bFvM8ZvtlhkW4iXH3oD2A/Abena-ai?m=auto&t=rmFU9qUcSrPCBbYA-6",
+    image: abenaAsset,
+  },
+  {
+    title: "Bank UI",
+    summary: "A banking interface prototype focusing on multi-account flows.",
+    role: "UI/UX Design",
+    focus: "Dashboard, transactions, quick actions",
+    challenge: "Surface key actions while keeping the UI uncluttered.",
+    approach: "Card-based layouts and clear typographic hierarchy.",
+    prototypeUrl: "https://www.figma.com/design/ec0onBz9rdPqV4WMQeyfjU/bank-ui?m=auto&t=rmFU9qUcSrPCBbYA-6",
+    image: bankAsset,
+  },
+  {
+    title: "Juma",
+    summary: "A work-in-progress project (placeholder preview).",
+    role: "Creative Direction",
+    focus: "Branding, interface",
+    challenge: "Placeholder until preview assets are available.",
+    approach: "Use a simple, bold visual as a temporary preview.",
+    prototypeUrl: "https://www.figma.com/design/BMLVU369JdMLxRkjFXhHXG/juma?m=auto&t=rmFU9qUcSrPCBbYA-6",
+    image: jumaPlaceholder,
+  },
+  {
+    title: "Organic APP",
+    summary: "Delivery and grocery app UX and flows.",
+    role: "Design & Prototyping",
+    focus: "Browse, cart and checkout",
+    challenge: "Make product discovery fast on mobile.",
+    approach: "Photography-led cards and streamlined checkout.",
+    prototypeUrl: "https://www.figma.com/design/QlFQxsZYmHbPN7HMaD0TWL/Organic-APP?m=auto&t=rmFU9qUcSrPCBbYA-6",
+    image: foodAsset,
   },
 ];
 
@@ -201,7 +253,7 @@ export const caseStudies: CaseStudy[] = [
     challenge: "A young juice brand needed visual identity material for retail and social.",
     solution: "Product labels and promotional artwork with a consistent brand system.",
     result: "Shelf-ready packaging and campaign assets.",
-    image: konama4Asset.url,
+    image: konama4Asset,
   },
   {
     business: "Arikob Farms",
@@ -209,7 +261,7 @@ export const caseStudies: CaseStudy[] = [
     challenge: "Reach new customers for locally raised poultry.",
     solution: "Social media management plus campaign design across platforms.",
     result: "A consistent, recognisable presence for the farm online.",
-    image: arikobAsset.url,
+    image: arikobAsset,
   },
   {
     business: "The Celebrity Chefs",
@@ -217,7 +269,7 @@ export const caseStudies: CaseStudy[] = [
     challenge: "Take a buffet restaurant's pickup and delivery orders online.",
     solution: "A mobile ordering interface designed and prototyped in Figma.",
     result: "An interactive prototype ready for development.",
-    image: celebrityAsset.url,
+    image: celebrityAsset,
   },
   {
     business: "Shopall GH",
